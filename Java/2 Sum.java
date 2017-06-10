@@ -51,7 +51,7 @@ public class Solution {
         int[] rst = new int[2];
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < numbers.length; i++) {
-            if (map.containsKey(target - numbers[i])) {
+            if (map.containsKey(target - numbers[i])) {//这里有问题
                 rst[0] = map.get(target - numbers[i]) + 1;
                 rst[1] = i + 1;
                 break;
