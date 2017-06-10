@@ -41,8 +41,8 @@ public class Solution {
         while(start < end) {
             long sum = (long)(nums[start] + nums[end]);
             if (target == sum) {
-                rst[0] = start + 1;
-                rst[1] = end + 1;
+                rst[0] = start + 1;//这里好像不用加1
+                rst[1] = end + 1;//这里好像不用加1
                 break;
             } else if (target > sum) {
                 start++;
